@@ -22,4 +22,5 @@ export default function() {
     this.del('/posts/:id');
   */
     this.get('/games');
+    this.post('/games')
 }

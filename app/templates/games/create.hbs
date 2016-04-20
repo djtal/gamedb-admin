@@ -1,0 +1,12 @@
+<form class="form" {{action "create" on="submit"}}>
+  <div class="form-group">
+    <label for="gameTitle">Title</label>
+    {{input type="text" class="new-game form-control" id="gameTitle" placeholder="New game" value=title}}
+  </div>
+  <div class="form-group">
+    <label for="gameDescription">Description</label>
+     {{textarea class="form-control" value=description}}
+  </div>
+  <button class="btn btn-primary">Save</button>
+
+</form>
