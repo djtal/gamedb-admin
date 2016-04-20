@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-3">
+    <ul class="list-group">
+      {{#each model as |game|}}
+        <li class="list-group-item">
+          {{#link-to "games.game" game}}
+            {{game.title}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-md-9">
+    {{outlet}}
+  </div>
+</div>
+
+
+
+
